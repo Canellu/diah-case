@@ -23,7 +23,7 @@ export default function AddressValidator() {
   return (
     <MapProvider>
       <div className="h-full p-8 rounded-md shadow border bg-white grid grid-cols-2 grid-rows-5 gap-6">
-        <div className="row-span-2">
+        <div className="row-span-2 col-span-2 sm:col-span-1">
           <AddressInputList
             addresses={addresses}
             setAddresses={setAddresses}
@@ -32,7 +32,7 @@ export default function AddressValidator() {
             onCountryChange={setCountryCode}
           />
         </div>
-        <div className="border row-span-2 rounded-md">
+        <div className="border row-span-2 rounded-md col-span-2 sm:col-span-1">
           <Map />
         </div>
 
