@@ -51,6 +51,12 @@ Then open [http://localhost:3000](http://localhost:3000) with your browser to se
 
 ### Running the E2E Test
 
+Install playwright. It will download the necessary dependencies like browsers engines etc.
+
+```bash
+npx playwright install
+```
+
 The application server needs to be running in order to run the E2E test.
 
 ```bash
