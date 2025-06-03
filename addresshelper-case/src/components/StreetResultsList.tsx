@@ -60,18 +60,18 @@ export default function StreetResultsList({
 
           return (
             <div key={id}>
-              <h3 className="flex items-center justify-between sticky top-0 bg-neutral-200 py-2 px-4 rounded-t text-sm font-medium">
-                <span>
+              <p className="flex items-center justify-between sticky top-0 bg-neutral-200 py-2 px-4 rounded-t text-sm font-medium">
+                <span data-testid="results">
                   Results for:{" "}
                   <span className="text-blue-700 font-semibold">
                     {address?.value}
                   </span>
                 </span>
-                <span className="text-neutral-600">
+                <span data-testid="number-found" className="text-neutral-600">
                   {response.streets.length} street
                   {response.streets.length !== 1 ? "s" : ""} found
                 </span>
-              </h3>
+              </p>
 
               <ul className="flex flex-col">
                 {response.streets.map((street) => (

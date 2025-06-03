@@ -125,6 +125,7 @@ export default function AddressInputList({
           </div>
         ))}
         <Button
+          data-testid="validate"
           onClick={validateAddresses}
           disabled={loading}
           size="lg"
