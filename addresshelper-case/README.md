@@ -26,6 +26,9 @@
 
 ### Setting up the Project
 
+Obtain the environment variables from Anton (probs via email)
+Make sure the file name is `.env` and place it in the root of `/addresshelper-case` folder.
+
 Install the dependencies:
 
 ```bash
